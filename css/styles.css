@@ -315,8 +315,13 @@ button {
 
 .hero__art {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.hero__mobile-brand {
+  display: none;
 }
 
 .cake-illustration {
@@ -861,6 +866,14 @@ button:focus-visible {
 
   .hero {
     padding-block: 40px 56px;
+  }
+
+  .hero__mobile-brand {
+    display: block;
+    margin-top: 14px;
+    color: var(--color-secondary);
+    font-size: 1.15rem;
+    font-weight: 700;
   }
 
   .section {
