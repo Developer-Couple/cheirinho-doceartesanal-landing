@@ -10,10 +10,13 @@ HTML, CSS e JavaScript puros (sem frameworks, sem build).
 
 ```
 .
-├── index.html       # estrutura da página e SEO (meta tags, JSON-LD)
-├── css/styles.css   # estilos e responsividade
-├── js/script.js     # menu mobile, scroll, botão flutuante do WhatsApp
-└── images/          # imagens do site
+├── index.html         # landing page principal e SEO (meta tags, JSON-LD)
+├── pedido/index.html  # monte seu pedido: escolhe itens e gera mensagem de WhatsApp
+├── css/styles.css     # estilos e responsividade da landing
+├── css/pedido.css     # estilos específicos da página de pedido
+├── js/script.js       # menu mobile, scroll, botão flutuante do WhatsApp
+├── js/pedido.js       # catálogo, carrinho e geração da mensagem do pedido
+└── images/            # imagens do site
 ```
 
 ## Como rodar localmente
@@ -35,6 +38,14 @@ git add .
 git commit -m "sua mensagem"
 git push
 ```
+
+## Página "Monte seu pedido"
+
+`pedido/index.html` (https://camilasnasc.github.io/cheirinho-doceartesanal-landing/pedido/) é uma página independente onde a pessoa marca os produtos que quer, ajusta a quantidade e clica em enviar — o link já abre o WhatsApp com a mensagem toda montada, sem precisar digitar nada.
+
+Ainda não há link para ela a partir da landing principal (não foi alterada). Para divulgar, use a URL acima diretamente ou adicione um link manualmente quando quiser integrar.
+
+O catálogo de produtos fica no início do arquivo `js/pedido.js`, na constante `CATALOG` — para adicionar, remover ou renomear itens, edite esse array (cada item tem `id`, `name` e, opcionalmente, `tag`).
 
 ## Configuração do WhatsApp
 

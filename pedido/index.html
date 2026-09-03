@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monte seu Pedido | Cheirinho Doce Artesanal</title>
+  <meta name="description" content="Escolha os doces que quiser e envie seu pedido pronto pelo WhatsApp em poucos cliques.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.cheirinhodoceartesanal.com.br/pedido/">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍰</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/pedido.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="../index.html" class="logo">
+        <span class="logo__icon" aria-hidden="true">🍰</span>
+        <span class="logo__text">Cheirinho <em>Doce Artesanal</em></span>
+      </a>
+
+      <nav class="nav nav--simple">
+        <a href="../index.html" class="nav__link">← Voltar ao site</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="order-hero">
+      <div class="container">
+        <p class="eyebrow">Monte do seu jeitinho</p>
+        <h1>Escolha seus doces e envie o pedido em 1 clique</h1>
+        <p class="order-hero__subtitle">
+          Selecione os itens, ajuste as quantidades e mande tudo prontinho pra Cibele no WhatsApp —
+          sem precisar digitar nada.
+        </p>
+      </div>
+    </section>
+
+    <section class="order-builder">
+      <div class="container order-layout">
+
+        <div class="order-catalog" id="orderCatalog" aria-label="Catálogo de produtos">
+          <!-- categorias e itens são renderizados via JS (pedido.js) -->
+        </div>
+
+        <aside class="order-summary" id="orderSummary" aria-label="Resumo do pedido">
+          <div class="order-summary__card">
+            <h2>Seu pedido</h2>
+
+            <ul class="order-summary__list" id="summaryList">
+              <li class="order-summary__empty" id="summaryEmpty">Nenhum item selecionado ainda.</li>
+            </ul>
+
+            <div class="form-field">
+              <label for="customerName">Seu nome</label>
+              <input type="text" id="customerName" name="customerName" placeholder="Como podemos te chamar?" autocomplete="name">
+            </div>
+
+            <div class="form-field">
+              <label for="deliveryDate">Data desejada (opcional)</label>
+              <input type="date" id="deliveryDate" name="deliveryDate">
+            </div>
+
+            <div class="form-field">
+              <label for="notes">Observações (opcional)</label>
+              <textarea id="notes" name="notes" rows="3" placeholder="Alguma preferência, restrição ou detalhe do pedido?"></textarea>
+            </div>
+
+            <a href="#" id="sendOrderBtn" class="btn btn--whatsapp btn--lg order-summary__cta"
+               target="_blank" rel="noopener" data-wa-cta="pedido-montado" aria-disabled="true">
+              <svg class="icon-wa" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9 3 3.3 8.6 3.3 15.5c0 2.4.7 4.7 1.9 6.7L3 29l7-1.8c1.9 1 4 1.6 6 1.6 7 0 12.7-5.6 12.7-12.5S23 3 16 3zm0 22.6c-1.9 0-3.7-.5-5.3-1.4l-.4-.2-4.1 1 1.1-4-.3-.4a10 10 0 01-1.6-5.4c0-5.6 4.6-10.1 10.6-10.1s10.6 4.5 10.6 10.1S21.9 25.6 16 25.6zm5.8-7.6c-.3-.2-1.9-1-2.2-1.1-.3-.1-.5-.2-.7.1-.2.3-.8 1.1-1 1.3-.2.2-.4.3-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.5-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.7-1.8-1-2.4-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1 2.9 1.2 3.1c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.1-.3-.2-.6-.3z"/></svg>
+              Enviar pedido no WhatsApp
+            </a>
+            <p class="order-summary__hint" id="summaryHint">Selecione ao menos um item para continuar.</p>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="logo__icon" aria-hidden="true">🍰</span>
+        <span class="logo__text">Cheirinho <em>Doce Artesanal</em></span>
+        <p>Doces artesanais feitos com carinho pela Cibele.</p>
+      </div>
+
+      <div class="footer__contact">
+        <h3>Contato</h3>
+        <p>
+          <a href="https://wa.me/5535992200328" target="_blank" rel="noopener">📱 (35) 99220-0328</a>
+        </p>
+        <p>
+          <a href="https://www.instagram.com/cheirinho_doceartesanal" target="_blank" rel="noopener">📸 @cheirinho_doceartesanal</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; <span id="year"></span> Cheirinho Doce Artesanal. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante WhatsApp -->
+  <a href="https://wa.me/5535992200328?text=Oi%2C%20Cibele!%20Vim%20pelo%20site%20e%20quero%20fazer%20um%20pedido%20%F0%9F%8D%93"
+     class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chamar no WhatsApp" data-wa-cta="float-pedido">
+    <svg class="icon-wa" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9 3 3.3 8.6 3.3 15.5c0 2.4.7 4.7 1.9 6.7L3 29l7-1.8c1.9 1 4 1.6 6 1.6 7 0 12.7-5.6 12.7-12.5S23 3 16 3zm0 22.6c-1.9 0-3.7-.5-5.3-1.4l-.4-.2-4.1 1 1.1-4-.3-.4a10 10 0 01-1.6-5.4c0-5.6 4.6-10.1 10.6-10.1s10.6 4.5 10.6 10.1S21.9 25.6 16 25.6zm5.8-7.6c-.3-.2-1.9-1-2.2-1.1-.3-.1-.5-.2-.7.1-.2.3-.8 1.1-1 1.3-.2.2-.4.3-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.5-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.7-1.8-1-2.4-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1 2.9 1.2 3.1c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.1-.3-.2-.6-.3z"/></svg>
+  </a>
+
+  <script src="../js/script.js"></script>
+  <script src="../js/pedido.js"></script>
+</body>
+</html>
