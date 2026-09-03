@@ -185,6 +185,10 @@
   border-bottom: none;
 }
 
+.order-summary__list li[hidden] {
+  display: none;
+}
+
 .order-summary__empty {
   color: var(--color-text-soft);
   font-style: italic;
