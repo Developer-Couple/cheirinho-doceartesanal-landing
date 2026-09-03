@@ -130,7 +130,7 @@
     const notes = notesInput.value.trim();
 
     const lines = [];
-    lines.push(name ? `Oi, Cibele! Me chamo ${name}. Vim pelo site e quero fazer este pedido:` : 'Oi, Cibele! Vim pelo site e quero fazer este pedido:');
+    lines.push(name ? `Olá, Cibele! Me chamo ${name}. Vim pelo site da Cheirinho Doce Artesanal e gostaria de fazer este pedido:` : 'Olá, Cibele! Vim pelo site da Cheirinho Doce Artesanal e gostaria de fazer este pedido:');
     lines.push('');
 
     state.forEach((qty, id) => {
@@ -141,16 +141,16 @@
     if (date) {
       const [year, month, day] = date.split('-');
       lines.push('');
-      lines.push(`📅 Data desejada: ${day}/${month}/${year}`);
+      lines.push(`Data desejada: ${day}/${month}/${year}`);
     }
 
     if (notes) {
       lines.push('');
-      lines.push(`📝 Observações: ${notes}`);
+      lines.push(`Observações: ${notes}`);
     }
 
     lines.push('');
-    lines.push('Aguardo retorno, obrigada(o)! 🍓');
+    lines.push('Aguardo seu retorno para confirmar disponibilidade, valores e prazo. Obrigada(o)!');
 
     return lines.join('\n');
   }
