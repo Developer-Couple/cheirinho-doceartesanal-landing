@@ -51,9 +51,37 @@
     window.addEventListener('scroll', toggleFloat, { passive: true });
   }
 
+  /* SPA: alterna entre a view principal e a view "Monte seu pedido" (hash #pedido) */
+  const mainView = document.getElementById('topo');
+  const pedidoView = document.getElementById('pedido');
+  const pedidoHeading = document.getElementById('pedidoHeading');
+
+  if (mainView && pedidoView) {
+    const applyRoute = () => {
+      const hash = window.location.hash;
+      const isPedido = hash === '#pedido';
+
+      mainView.classList.toggle('view--active', !isPedido);
+      pedidoView.classList.toggle('view--active', isPedido);
+
+      if (isPedido) {
+        if (pedidoHeading) {
+          pedidoHeading.scrollIntoView();
+          pedidoHeading.focus();
+        }
+      } else if (hash.length > 1) {
+        const target = document.querySelector(hash);
+        if (target) target.scrollIntoView();
+      }
+    };
+
+    applyRoute(); // cobre acesso direto com #pedido na URL (ex.: redirect do stub em pedido/)
+    window.addEventListener('hashchange', applyRoute);
+  }
+
   /* Animação de revelação ao entrar na tela */
   const revealTargets = document.querySelectorAll(
-    '.feature-card, .product-card, .step'
+    '.feature-card, .product-card, .step, .hero__art'
   );
   revealTargets.forEach((el) => el.setAttribute('data-reveal', ''));
 

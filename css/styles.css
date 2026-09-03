@@ -705,6 +705,21 @@ button:focus-visible {
   outline-offset: 3px;
 }
 
+/* Heading usado apenas como alvo de foco programático da SPA (troca de view):
+   não é um controle interativo real, então não exibe outline nativo do navegador. */
+#pedidoHeading {
+  outline: none;
+}
+
+/* ---------- SPA: alterna entre a view principal e "Monte seu pedido" (#pedido) ---------- */
+.view {
+  display: none;
+}
+
+.view--active {
+  display: block;
+}
+
 /* ==========================================================================
    Responsivo
    ========================================================================== */

@@ -2,25 +2,21 @@
    Página "Monte seu pedido" — estilos específicos
    ========================================================================== */
 
-.nav--simple {
-  gap: 0;
-}
-
-.nav--simple .nav__link {
-  font-weight: 600;
-  color: var(--color-primary-dark);
-}
-
 .order-hero {
   padding-block: 48px 24px;
   background: linear-gradient(180deg, var(--color-cream) 0%, var(--color-bg) 100%);
   text-align: center;
 }
 
-.order-hero h1 {
+.order-hero h2 {
   font-size: clamp(1.7rem, 3.4vw, 2.5rem);
   color: var(--color-secondary);
   margin-bottom: 12px;
+}
+
+.order-hero h2:focus {
+  outline: 2px solid var(--color-primary-dark);
+  outline-offset: 4px;
 }
 
 .order-hero__subtitle {
@@ -160,7 +156,7 @@
   top: calc(var(--header-h) + 20px);
 }
 
-.order-summary__card h2 {
+.order-summary__card h3 {
   font-size: 1.2rem;
   color: var(--color-secondary);
   margin-bottom: 16px;
