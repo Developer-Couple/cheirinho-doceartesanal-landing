@@ -18,7 +18,8 @@
   <meta property="og:site_name" content="Cheirinho Doce Artesanal">
   <meta name="twitter:card" content="summary">
 
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍰</text></svg>">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon-180.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,7 +50,7 @@
   <header class="header" id="header">
     <div class="container header__inner">
       <a href="#topo" class="logo">
-        <span class="logo__icon" aria-hidden="true">🍰</span>
+        <img src="assets/img/logo-temporaria.jpeg" alt="" class="logo__icon">
         <span class="logo__text">Cheirinho <em>Doce Artesanal</em></span>
       </a>
 
@@ -82,7 +83,7 @@
           <p class="eyebrow">Feito à mão, com carinho de verdade</p>
           <h1>Doces artesanais que <span class="highlight">adoçam</span> o seu dia</h1>
           <p class="hero__subtitle">
-            Bolos de pote, bolo naked, doces para festa e garçonetes — direto da cozinha da Cibele
+            Bolos de pote, bolo naked, doces para festa e garçonetes, direto da cozinha da Cibele
             para a sua mesa. Peça agora pelo WhatsApp e garanta o seu.
           </p>
           <div class="hero__actions">
@@ -93,20 +94,13 @@
             </a>
             <a href="#cardapio" class="btn btn--outline">Ver cardápio</a>
           </div>
-
-          <ul class="hero__stats" aria-label="Números da doceria">
-            <li><strong>+250</strong><span>clientes que já confiaram</span></li>
-            <li><strong>100%</strong><span>artesanal e sob encomenda</span></li>
-            <li><strong>5★</strong><span>avaliação no Instagram</span></li>
-          </ul>
         </div>
 
-        <div class="hero__art" aria-hidden="true">
+        <div class="hero__art">
           <div class="cake-illustration">
-            <span class="cake-emoji">🍰</span>
-            <span class="float-emoji float-emoji--1">🍓</span>
-            <span class="float-emoji float-emoji--2">🧁</span>
-            <span class="float-emoji float-emoji--3">🍫</span>
+            <img src="assets/img/logo-temporaria.jpeg"
+                 alt="Fatia de bolo de chocolate com morango e chantili da Cheirinho Doce Artesanal"
+                 class="cake-illustration__img">
           </div>
         </div>
       </div>
@@ -118,22 +112,45 @@
         <h2 class="section__title">Por que pedir da Cheirinho Doce Artesanal?</h2>
         <div class="cards-grid cards-grid--4">
           <div class="feature-card">
-            <span class="feature-card__icon" aria-hidden="true">👩‍🍳</span>
+            <span class="feature-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6.5 10.5a3.5 3.5 0 0 1 1-6.9A3.8 3.8 0 0 1 12 2a3.8 3.8 0 0 1 4.5 1.6a3.5 3.5 0 0 1 1 6.9"/>
+                <path d="M7 10.5V15h10v-4.5"/>
+                <path d="M6 17h12v4H6z"/>
+              </svg>
+            </span>
             <h3>100% artesanal</h3>
             <p>Cada doce é feito à mão pela Cibele, com ingredientes selecionados e muito carinho.</p>
           </div>
           <div class="feature-card">
-            <span class="feature-card__icon" aria-hidden="true">🎂</span>
+            <span class="feature-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="9"/>
+                <path d="M12 7v5l3.5 2"/>
+              </svg>
+            </span>
             <h3>Feito na hora</h3>
             <p>Sem estoque parado: seu pedido é preparado fresquinho para o seu dia especial.</p>
           </div>
           <div class="feature-card">
-            <span class="feature-card__icon" aria-hidden="true">🎀</span>
+            <span class="feature-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 12c-2-3-6-4-8-2s0 6 3 6 4-2 5-4Z"/>
+                <path d="M12 12c2-3 6-4 8-2s0 6-3 6-4-2-5-4Z"/>
+                <circle cx="12" cy="12" r="1.3" fill="currentColor" stroke="none"/>
+                <path d="M12 13.3V21"/>
+              </svg>
+            </span>
             <h3>Personalizado</h3>
             <p>Sabor, tamanho e decoração combinados do jeitinho que você quiser.</p>
           </div>
           <div class="feature-card">
-            <span class="feature-card__icon" aria-hidden="true">💬</span>
+            <span class="feature-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 5h16v10H9l-4 4v-4H4z" stroke-linejoin="round"/>
+                <path d="M8 9h8M8 12h5"/>
+              </svg>
+            </span>
             <h3>Pedido fácil</h3>
             <p>Combine tudo direto pelo WhatsApp, sem burocracia e com resposta rápida.</p>
           </div>
@@ -151,19 +168,25 @@
 
           <article class="product-card">
             <span class="product-card__badge">Novidade</span>
-            <div class="product-card__media" aria-hidden="true">🍓🍰</div>
+            <div class="product-card__media">
+              <img src="assets/img/fuba-com-goiabada.jpg"
+                   alt="Bolo de fubá com goiabada polvilhado com açúcar de confeiteiro, da Cheirinho Doce Artesanal" loading="lazy">
+            </div>
             <div class="product-card__body">
-              <h3>Bolo Cravejado de Morango no Pote</h3>
-              <p>A nova sensação do momento! Camadas generosas de bolo, creme e morangos fresquinhos em um potinho individual.</p>
-              <a href="https://wa.me/5535992200328?text=Oi%2C%20Cibele!%20Quero%20fazer%20uma%20reserva%20do%20Bolo%20Cravejado%20de%20Morango%20no%20Pote%20%F0%9F%8D%93%F0%9F%8D%93"
-                 class="product-card__cta" target="_blank" rel="noopener" data-wa-cta="produto-cravejado">
+              <h3>Bolo de Fubá com Goiabada</h3>
+              <p>Bolo de fubá macio com goiabada cremosa, finalizado com um toque de açúcar de confeiteiro.</p>
+              <a href="https://wa.me/5535992200328?text=Oi%2C%20Cibele!%20Quero%20fazer%20uma%20reserva%20do%20Bolo%20de%20Fub%C3%A1%20com%20Goiabada%20%F0%9F%8D%B0"
+                 class="product-card__cta" target="_blank" rel="noopener" data-wa-cta="produto-fuba-goiabada">
                 Reservar no WhatsApp →
               </a>
             </div>
           </article>
 
           <article class="product-card">
-            <div class="product-card__media" aria-hidden="true">🥄🍰</div>
+            <div class="product-card__media">
+              <img src="assets/img/SaveClip.App_727364649_18042018758637488_6402119738083572810_n.jpg"
+                   alt="Potinhos individuais de bolo de pote da Cheirinho Doce Artesanal" loading="lazy">
+            </div>
             <div class="product-card__body">
               <h3>Bolos de Pote</h3>
               <p>Sabores irresistíveis em potinho individual: Ninho com Morango, Matilda, Dois Amores e outras delícias.</p>
@@ -175,7 +198,10 @@
           </article>
 
           <article class="product-card">
-            <div class="product-card__media" aria-hidden="true">🍰🌿</div>
+            <div class="product-card__media">
+              <img src="assets/img/bolo-nake.jpg"
+                   alt="Bolo Naked Cake decorado com morangos frescos, da Cheirinho Doce Artesanal" loading="lazy">
+            </div>
             <div class="product-card__body">
               <h3>Bolo Naked Cake</h3>
               <p>Bolo artesanal decorado com frutas frescas, elegante e delicioso — perfeito para aniversários e ocasiões especiais.</p>
@@ -187,7 +213,10 @@
           </article>
 
           <article class="product-card">
-            <div class="product-card__media" aria-hidden="true">🍫🎉</div>
+            <div class="product-card__media product-card__media--top">
+              <img src="assets/img/SaveClip.App_660376509_18030790445637488_6984567225383814901_n.jpg"
+                   alt="Bolo inteiro decorado com chantili e crocante, da Cheirinho Doce Artesanal" loading="lazy">
+            </div>
             <div class="product-card__body">
               <h3>Bolo Prestígio &amp; Matilda</h3>
               <p>Bolos inteiros para festas, com aquele sabor caseiro que todo mundo ama repetir.</p>
@@ -199,7 +228,10 @@
           </article>
 
           <article class="product-card">
-            <div class="product-card__media" aria-hidden="true">🍬🍭</div>
+            <div class="product-card__media">
+              <img src="assets/img/SaveClip.App_722666673_18040884974637488_3064238404644354997_n.jpg"
+                   alt="Brigadeiros e docinhos finos organizados para festa, da Cheirinho Doce Artesanal" loading="lazy">
+            </div>
             <div class="product-card__body">
               <h3>Doces para Festa</h3>
               <p>Docinhos finos e garçonetes para complementar sua festa com todo o capricho.</p>
@@ -211,7 +243,10 @@
           </article>
 
           <article class="product-card">
-            <div class="product-card__media" aria-hidden="true">🎂✨</div>
+            <div class="product-card__media">
+              <img src="assets/img/SaveClip.App_780087797_18051032726637488_6203895115660936453_n.jpg"
+                   alt="Bolo personalizado decorado para aniversário, da Cheirinho Doce Artesanal" loading="lazy">
+            </div>
             <div class="product-card__body">
               <h3>Encomendas Personalizadas</h3>
               <p>Aniversário, chá revelação, casamento... conte o que você imagina e a gente coloca a mão na massa.</p>
@@ -254,7 +289,7 @@
     <section class="cta-final">
       <div class="container cta-final__inner">
         <h2>Pronta para adoçar o seu dia?</h2>
-        <p>Fale agora com a Cibele e garanta seu pedido antes que os horários lotem.</p>
+        <p>Fale agora com a Cibele e garanta o seu pedido.</p>
         <a href="https://wa.me/5535992200328?text=Oi%2C%20Cibele!%20Vim%20pelo%20site%20e%20quero%20fazer%20um%20pedido%20%F0%9F%8D%93"
            class="btn btn--whatsapp btn--lg" target="_blank" rel="noopener" data-wa-cta="cta-final">
           <svg class="icon-wa" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9 3 3.3 8.6 3.3 15.5c0 2.4.7 4.7 1.9 6.7L3 29l7-1.8c1.9 1 4 1.6 6 1.6 7 0 12.7-5.6 12.7-12.5S23 3 16 3zm0 22.6c-1.9 0-3.7-.5-5.3-1.4l-.4-.2-4.1 1 1.1-4-.3-.4a10 10 0 01-1.6-5.4c0-5.6 4.6-10.1 10.6-10.1s10.6 4.5 10.6 10.1S21.9 25.6 16 25.6zm5.8-7.6c-.3-.2-1.9-1-2.2-1.1-.3-.1-.5-.2-.7.1-.2.3-.8 1.1-1 1.3-.2.2-.4.3-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.5-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.7-1.8-1-2.4-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1 2.9 1.2 3.1c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.1-.3-.2-.6-.3z"/></svg>
@@ -329,7 +364,7 @@
   <footer class="footer" id="contato">
     <div class="container footer__inner">
       <div class="footer__brand">
-        <span class="logo__icon" aria-hidden="true">🍰</span>
+        <img src="assets/img/logo-temporaria.jpeg" alt="" class="logo__icon">
         <span class="logo__text">Cheirinho <em>Doce Artesanal</em></span>
         <p>Doces artesanais feitos com carinho pela Cibele.</p>
       </div>
@@ -337,12 +372,24 @@
       <div class="footer__contact">
         <h3>Contato</h3>
         <p>
-          <a href="https://wa.me/5535992200328" target="_blank" rel="noopener">📱 (35) 99220-0328</a>
+          <a href="https://wa.me/5535992200328" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M6.5 3h3l1.5 4-2 1.5a12 12 0 0 0 6.5 6.5L17 13l4 1.5v3a2 2 0 0 1-2 2A15.5 15.5 0 0 1 4.5 5a2 2 0 0 1 2-2Z"/>
+            </svg>
+            (35) 99220-0328
+          </a>
         </p>
         <p>
-          <a href="https://www.instagram.com/cheirinho_doceartesanal/" target="_blank" rel="noopener">📸 @cheirinho_doceartesanal</a>
+          <a href="https://www.instagram.com/cheirinho_doceartesanal/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3.5" y="3.5" width="17" height="17" rx="5"/>
+              <circle cx="12" cy="12" r="4.2"/>
+              <circle cx="17" cy="7" r="0.8" fill="currentColor" stroke="none"/>
+            </svg>
+            @cheirinho_doceartesanal
+          </a>
         </p>
-        <p class="footer__note"><!-- preencher com endereço/cidade e horário de atendimento reais --></p>
+        <p class="footer__note">Lavras, MG</p>
       </div>
     </div>
     <div class="footer__bottom">

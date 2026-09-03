@@ -7,7 +7,7 @@
     {
       category: 'Bolos de Pote',
       items: [
-        { id: 'pote-cravejado', name: 'Bolo Cravejado de Morango no Pote', tag: 'Novidade' },
+        { id: 'pote-cravejado', name: 'Bolo de Fubá com Goiabada', tag: 'Novidade' },
         { id: 'pote-ninho', name: 'Bolo de Pote — Ninho com Morango' },
         { id: 'pote-matilda', name: 'Bolo de Pote — Matilda' },
         { id: 'pote-dois-amores', name: 'Bolo de Pote — Dois Amores' },
