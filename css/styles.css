@@ -847,9 +847,7 @@ button:focus-visible {
   }
 
   .logo__text {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    display: none;
   }
 
   .header__order-cta {
