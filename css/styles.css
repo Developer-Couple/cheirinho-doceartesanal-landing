@@ -166,6 +166,27 @@ button {
   gap: 32px;
 }
 
+.header__actions {
+  display: none;
+  align-items: center;
+  gap: 10px;
+}
+
+.header__order-cta {
+  padding: 10px 16px;
+  font-size: 0.85rem;
+  background: var(--color-primary);
+  color: var(--color-white);
+  box-shadow: 0 8px 18px rgba(232, 93, 138, 0.22);
+}
+
+.header__order-cta:hover,
+.header__order-cta:focus-visible {
+  background: var(--color-primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(232, 93, 138, 0.28);
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -714,6 +735,15 @@ button:focus-visible {
    ========================================================================== */
 
 @media (max-width: 1180px) {
+  .header__inner {
+    gap: 14px;
+  }
+
+  .header__actions {
+    display: flex;
+    margin-left: auto;
+  }
+
   .nav-toggle {
     display: flex;
   }
@@ -808,6 +838,24 @@ button:focus-visible {
 }
 
 @media (max-width: 720px) {
+  .header__inner {
+    gap: 10px;
+  }
+
+  .logo {
+    min-width: 0;
+  }
+
+  .logo__text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .header__order-cta {
+    padding-inline: 14px;
+  }
+
   .cards-grid--4,
   .cards-grid--3 {
     grid-template-columns: 1fr;
@@ -819,6 +867,13 @@ button:focus-visible {
 
   .section {
     padding-block: 56px;
+  }
+}
+
+@media (max-width: 420px) {
+  .header__order-cta {
+    padding-inline: 12px;
+    font-size: 0.8rem;
   }
 }
 
